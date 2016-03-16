@@ -11,6 +11,7 @@
 		1D8D46271C99A988004EE90A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D46261C99A988004EE90A /* ViewController.swift */; };
 		1D8D462A1C99A988004EE90A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8D46281C99A988004EE90A /* Main.storyboard */; };
 		1D8D462C1C99A988004EE90A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8D462B1C99A988004EE90A /* Assets.xcassets */; };
+		1D8D46361C99B242004EE90A /* FocusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D46351C99B242004EE90A /* FocusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1D8D46291C99A988004EE90A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D8D462B1C99A988004EE90A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D8D462D1C99A988004EE90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8D46351C99B242004EE90A /* FocusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FocusableView.swift; path = ../../FocusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		1D8D46231C99A988004EE90A /* FocusView */ = {
 			isa = PBXGroup;
 			children = (
+				1D8D46351C99B242004EE90A /* FocusableView.swift */,
 				1D8D46241C99A988004EE90A /* AppDelegate.swift */,
 				1D8D46261C99A988004EE90A /* ViewController.swift */,
 				1D8D46281C99A988004EE90A /* Main.storyboard */,
@@ -133,6 +136,7 @@
 			files = (
 				1D8D46271C99A988004EE90A /* ViewController.swift in Sources */,
 				1D8D46251C99A988004EE90A /* AppDelegate.swift in Sources */,
+				1D8D46361C99B242004EE90A /* FocusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +244,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.FocusView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -252,6 +257,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pluralsight.FocusView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -274,6 +280,7 @@
 				1D8D46321C99A988004EE90A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

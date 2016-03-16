@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="10089" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FocusView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="MZn-kn-KTa">
+                                <rect key="frame" x="20" y="0.0" width="1880" height="1080"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zN8-XX-oHb">
+                                        <rect key="frame" x="0.0" y="0.0" width="1880" height="515"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVi-Id-yxt" customClass="FocusableView" customModule="FocusView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="593" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark blur background style, no focus style, vertical translation wiggle, shows shadow on focus, enabled" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aov-h1-YuH">
+                                                        <rect key="frame" x="8" y="237" width="577" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="aov-h1-YuH" firstAttribute="centerY" secondItem="FVi-Id-yxt" secondAttribute="centerY" id="4dV-l4-zhe"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="aov-h1-YuH" secondAttribute="trailing" id="pdC-u6-evr"/>
+                                                    <constraint firstItem="aov-h1-YuH" firstAttribute="centerX" secondItem="FVi-Id-yxt" secondAttribute="centerX" id="yRP-94-6CS"/>
+                                                    <constraint firstItem="aov-h1-YuH" firstAttribute="leading" secondItem="FVi-Id-yxt" secondAttribute="leadingMargin" id="zrn-nz-kok"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoa-8p-UQf" customClass="FocusableView" customModule="FocusView" customModuleProvider="target">
+                                                <rect key="frame" x="643" y="0.0" width="594" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light blur background style, grow focus style, horizontal perspective rotation wiggle, shows shadow on focus, enabled" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxJ-gR-0wm">
+                                                        <rect key="frame" x="8" y="237" width="578" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="UxJ-gR-0wm" secondAttribute="trailing" id="OK4-G7-ph9"/>
+                                                    <constraint firstItem="UxJ-gR-0wm" firstAttribute="centerY" secondItem="xoa-8p-UQf" secondAttribute="centerY" id="jTi-4H-qct"/>
+                                                    <constraint firstItem="UxJ-gR-0wm" firstAttribute="centerX" secondItem="xoa-8p-UQf" secondAttribute="centerX" id="w1G-2o-fo3"/>
+                                                    <constraint firstAttribute="leadingMargin" secondItem="UxJ-gR-0wm" secondAttribute="leading" id="ykT-dd-gIr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ple-mG-BZU" customClass="FocusableView" customModule="FocusView" customModuleProvider="target">
+                                                <rect key="frame" x="1287" y="0.0" width="593" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-Hk-wwb">
+                                                        <rect key="frame" x="8" y="237" width="577" height="41"/>
+                                                        <string key="text">Light blur background style, grow (1.5 scale) focus style, horizontal perspective rotation wiggle, shows shadow on focus, enabled</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="gJF-Hk-wwb" firstAttribute="leading" secondItem="Ple-mG-BZU" secondAttribute="leadingMargin" id="35u-Ma-QAt"/>
+                                                    <constraint firstItem="gJF-Hk-wwb" firstAttribute="centerY" secondItem="Ple-mG-BZU" secondAttribute="centerY" id="6JH-O2-aci"/>
+                                                    <constraint firstItem="gJF-Hk-wwb" firstAttribute="centerX" secondItem="Ple-mG-BZU" secondAttribute="centerX" id="6jA-3z-VZ6"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="gJF-Hk-wwb" secondAttribute="trailing" id="UMY-i1-KVz"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fgy-gH-DCV">
+                                        <rect key="frame" x="0.0" y="565" width="1880" height="515"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAv-jZ-QkA" customClass="FocusableView" customModule="FocusView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="593" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px6-kI-gHU">
+                                                        <rect key="frame" x="8" y="237" width="577" height="41"/>
+                                                        <string key="text">Color (blue) background style, grow focus style, horizontal &amp; vertical perspective rotation wiggle, shows shadow on focus, enabled</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="px6-kI-gHU" firstAttribute="centerY" secondItem="rAv-jZ-QkA" secondAttribute="centerY" id="5Qu-xJ-Njz"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="px6-kI-gHU" secondAttribute="trailing" id="GBK-NY-Deb"/>
+                                                    <constraint firstItem="px6-kI-gHU" firstAttribute="centerX" secondItem="rAv-jZ-QkA" secondAttribute="centerX" id="f7s-wK-ezq"/>
+                                                    <constraint firstItem="px6-kI-gHU" firstAttribute="leading" secondItem="rAv-jZ-QkA" secondAttribute="leadingMargin" id="rNS-1h-rnp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPd-PW-Nes" customClass="FocusableView" customModule="FocusView" customModuleProvider="target">
+                                                <rect key="frame" x="643" y="0.0" width="594" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsz-I2-8ay">
+                                                        <rect key="frame" x="8" y="237" width="578" height="41"/>
+                                                        <string key="text">No background style, grow focus style, horizontal &amp; vertical perspective rotation wiggle, does not show shadow on focus, enabled</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Xsz-I2-8ay" firstAttribute="leading" secondItem="cPd-PW-Nes" secondAttribute="leadingMargin" id="GCg-jh-3LF"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Xsz-I2-8ay" secondAttribute="trailing" id="GSa-No-w3i"/>
+                                                    <constraint firstItem="Xsz-I2-8ay" firstAttribute="centerX" secondItem="cPd-PW-Nes" secondAttribute="centerX" id="PyF-rm-fii"/>
+                                                    <constraint firstItem="Xsz-I2-8ay" firstAttribute="centerY" secondItem="cPd-PW-Nes" secondAttribute="centerY" id="icp-z8-lcF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvn-gC-2f8" customClass="FocusableView" customModule="FocusView" customModuleProvider="target">
+                                                <rect key="frame" x="1287" y="0.0" width="593" height="515"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9O-22-OUV">
+                                                        <rect key="frame" x="8" y="237" width="577" height="41"/>
+                                                        <string key="text">Color (black) background style, grow focus style, horizontal &amp; vertical perspective rotation wiggle, does not show shadow on focus, disabled</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="i9O-22-OUV" firstAttribute="centerY" secondItem="zvn-gC-2f8" secondAttribute="centerY" id="7Nr-pF-Odv"/>
+                                                    <constraint firstItem="i9O-22-OUV" firstAttribute="leading" secondItem="zvn-gC-2f8" secondAttribute="leadingMargin" id="VSm-Q9-GLg"/>
+                                                    <constraint firstItem="i9O-22-OUV" firstAttribute="centerX" secondItem="zvn-gC-2f8" secondAttribute="centerX" id="mWO-bR-dkW"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="i9O-22-OUV" secondAttribute="trailing" id="nMk-Jb-485"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zN8-XX-oHb" firstAttribute="leading" secondItem="MZn-kn-KTa" secondAttribute="leading" id="EKe-EV-ojf"/>
+                                    <constraint firstItem="fgy-gH-DCV" firstAttribute="leading" secondItem="MZn-kn-KTa" secondAttribute="leading" id="brJ-mP-vJa"/>
+                                    <constraint firstAttribute="trailing" secondItem="fgy-gH-DCV" secondAttribute="trailing" id="vLG-Ri-0Wo"/>
+                                    <constraint firstAttribute="trailing" secondItem="zN8-XX-oHb" secondAttribute="trailing" id="yCn-1Z-nzq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MZn-kn-KTa" secondAttribute="bottom" id="5rp-gD-GCC"/>
+                            <constraint firstItem="MZn-kn-KTa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6ag-sw-lrR"/>
+                            <constraint firstItem="MZn-kn-KTa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="W8R-9M-Zjl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MZn-kn-KTa" secondAttribute="trailing" id="ncX-zP-U8h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeftView" destination="rAv-jZ-QkA" id="xsz-qA-S1x"/>
+                        <outlet property="bottomMiddleView" destination="cPd-PW-Nes" id="wwc-Jf-RbA"/>
+                        <outlet property="bottomRightView" destination="zvn-gC-2f8" id="6J7-Eb-0z7"/>
+                        <outlet property="topLeftView" destination="FVi-Id-yxt" id="lav-9g-U4n"/>
+                        <outlet property="topMiddleView" destination="xoa-8p-UQf" id="KxP-rY-JYK"/>
+                        <outlet property="topRightView" destination="Ple-mG-BZU" id="rJi-zG-QMV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
