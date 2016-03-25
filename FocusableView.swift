@@ -139,6 +139,7 @@ public class FocusableView: UIView {
         
         if focused {
             UIView.animateWithDuration(0.1, delay: 0.0, options: .BeginFromCurrentState, animations: addFocus, completion: nil)
+            delegate?.focusableViewWasSelected(self)
         }
     }
     
